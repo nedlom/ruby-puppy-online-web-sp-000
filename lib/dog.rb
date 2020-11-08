@@ -15,15 +15,15 @@ class Dog
   end
   
   def self.print_all
-    self.all.each{|dog_name| puts dog_name.name}
+    all.each{|dog_name| puts dog_name.name}
   end
   
   def save
-    self.class.all << self
+    @@all << self
   end
   
   def self.clear_all
-    self.all.clear
+    all.clear
   end
   
 end
